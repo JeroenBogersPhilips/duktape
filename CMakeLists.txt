@@ -8,8 +8,8 @@ add_library(${PROJECT_NAME} STATIC ${DUKTAPE_SRCS})
 
 install(
    TARGETS ${PROJECT_NAME}
-   ARCHIVE DESTINATION ${INSTALL_DESTINATION}/lib)
+   ARCHIVE DESTINATION lib)
 
-install(FILES "duk_config.h" "duktape.h"
+install(FILES "src/duk_config.h" "src/duktape.h"
             DESTINATION ${INSTALL_DESTINATION} 
             )   
